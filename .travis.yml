@@ -29,4 +29,4 @@ script:
   - npm run lint
   - npm test
 
-after_success: npm run coverage
+after_success: npm run coverage:publish
