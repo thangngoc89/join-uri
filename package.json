@@ -1,7 +1,7 @@
 {
   "name": "join-uri",
   "version": "1.0.0",
-  "description": "Lightweight ultility for joining url",
+  "description": "Lightweight ultility for joining url with no dependencies",
   "main": "index.js",
   "scripts": {
     "test": "ava test.js",
