@@ -8,6 +8,9 @@
     "coverage": "nyc npm run test",
     "lint": "standard"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thangngoc89/join-uri.git"
