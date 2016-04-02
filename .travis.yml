@@ -1,0 +1,32 @@
+sudo: false
+language: node_js
+
+node_js:
+  - 5
+  - 4
+  - iojs
+  - 0.12
+  - 0.11
+  - 0.10
+
+# fail asap when there is a failure
+matrix:
+  fast_finish: true
+
+# cache node modules
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm prune
+  # faster npm install
+  - npm set progress=false
+  # https://github.com/bcoe/nyc/issues/190
+  - npm install -g npm@latest
+
+script:
+  - npm run lint
+  - npm test
+
+after_success: npm run coverage

@@ -1,0 +1,33 @@
+{
+  "name": "join-uri",
+  "version": "1.0.0",
+  "description": "Lightweight ultility for joining url",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test.js",
+    "coverage": "nyc npm run test",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thangngoc89/join-uri.git"
+  },
+  "keywords": [
+    "url",
+    "uri",
+    "join",
+    "path"
+  ],
+  "author": "Khoa Nguyen <hi@khoanguyen.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thangngoc89/join-uri/issues"
+  },
+  "homepage": "https://github.com/thangngoc89/join-uri#readme",
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "npmpub": "^3.1.0",
+    "nyc": "^6.1.1",
+    "standard": "^6.0.8"
+  }
+}
